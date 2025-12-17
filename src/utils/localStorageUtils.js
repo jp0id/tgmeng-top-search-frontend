@@ -44,7 +44,7 @@ export const LOCAL_STORAGE_KEYS = {
     // 过滤中排除的挂念子
     UNINCLUDE_WORD: 'unincludeWord',
     // webhook订阅用的密钥
-    WEBHOOK_ACCESS_KEY: '',
+    WEBHOOK_ACCESS_KEY: 'VSAQ-7XH1-RYWU-LESE-JN1V-PHKG',
 };
 
 // 设置本地存储
