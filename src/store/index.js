@@ -16,7 +16,7 @@ class Platform {
 }
 
 import {createStore} from 'vuex';
-import {Avatar, Setting, Money, InfoFilled, Odometer} from "@element-plus/icons-vue";
+import {Setting} from "@element-plus/icons-vue";
 import {
     topSearchForYoutube,
     topSearchForBaiDu,
