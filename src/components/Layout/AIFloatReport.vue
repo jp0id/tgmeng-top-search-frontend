@@ -187,13 +187,11 @@
 
 <script>
 import {cacheSearchForAISummaryData} from "@/api/api";
-import AiFloatButton from "@/components/UI/AIFloatButton.vue";
 import EmptyData from "@/components/UI/EmptyData.vue";
 
 export default {
   components: {
     EmptyData,
-    AIFloatButton1: AiFloatButton,
   },
   data() {
     return {
