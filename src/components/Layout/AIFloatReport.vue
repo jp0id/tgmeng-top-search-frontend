@@ -1,23 +1,5 @@
 <template>
   <div>
-    <div>
-      <!-- 可拖动的AI浮动按钮 -->
-      <div
-          ref="floatButton"
-          class="fixed pointer-events-auto cursor-move z-[2100] transition-all"
-          :style="buttonStyle"
-          @mousedown="handleMouseDown"
-          @touchstart="handleTouchStart"
-      >
-        <AIFloatButton1
-            text="AI实时简报"
-            :size="buttonSize"
-            position="custom"
-            @click="handleButtonClick"
-        />
-      </div>
-    </div>
-
     <!-- 弹框 -->
     <div>
       <el-dialog
