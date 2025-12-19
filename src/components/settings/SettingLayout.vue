@@ -37,13 +37,13 @@ export default {
     // 监听路由变化
     '$route'(to) {
       if (this.isPC && (to.path === '/setting' || to.path === '/setting/')) {
-        this.$router.replace('/setting/about'); // 路由切换时设置默认路径
+        this.$router.replace('/setting/basic'); // 路由切换时设置默认路径
       }
     },
   },
   mounted() {
     if (this.isPC && (this.$route.path === '/setting' || this.$route.path === '/setting/')) {
-      this.$router.replace('/setting/about'); // 组件首次加载时设置默认路径
+      this.$router.replace('/setting/basic'); // 组件首次加载时设置默认路径
     }
   },
 };

@@ -14,8 +14,8 @@ export default function generateRSS(key) {
     }
 
     const info = key === "/" ? {
-        title: "糖果梦热榜 · 全站热点",
-        description: "糖果梦热榜 · 全站热点",
+        title: "新闻热榜 · 全站热点",
+        description: "新闻热榜 · 全站热点",
         logo: "",
         children: dataMap
     } : findNode(dataMap, key);
@@ -95,7 +95,7 @@ export default function generateRSS(key) {
             <lastBuildDate>${new Date(lastBuildDate || Date.now()).toUTCString()}</lastBuildDate>
             <image>
                 <url>https://tgmeng.com/logo.png</url>
-                <title>糖果梦热榜</title>
+                <title>新闻热榜</title>
                 <link>https://tgmeng.com</link>
             </image>
             ${itemsXml}

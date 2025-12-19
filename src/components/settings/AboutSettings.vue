@@ -6,7 +6,7 @@
       <header class="relative text-center">
 
         <h1 class="main-title">
-          糖果梦热榜 — 聚合全网、洞察趋势
+          新闻热榜 — 聚合全网、洞察趋势
         </h1>
 
         <div class="main-desc">
@@ -187,7 +187,7 @@ export default {
               avatar: require('@/assets/avatars/project/tgmeng.png'),
               name: '糖果梦',
               role: '先生',
-              work: '糖果梦热榜缔造者',
+              work: '新闻热榜缔造者',
               link: ''
             },
             {

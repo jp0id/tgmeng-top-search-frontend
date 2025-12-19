@@ -9,7 +9,7 @@
         </h1>
         <br/>
         <div class="main-desc">
-          <p class="mt-1 text-base text-left">赞助的目的是为了服务器的一切支出和糖果梦热榜站点的维护和功能迭代。</p>
+          <p class="mt-1 text-base text-left">赞助的目的是为了服务器的一切支出和新闻热榜站点的维护和功能迭代。</p>
           <p class="mt-1 text-base text-left">感谢佬友的喜欢和赞助，对每一位佬友致以最崇高的敬意！salute！！！</p>
           <p class="mt-1 text-base text-left">此名单用于记录每个赞助的佬友的名字,以下为时间由近到远的顺序排名</p>
           <p class="mt-1 text-base text-left">赞助后如果没有出现在下面列表，请在微信交流群联系一下站长</p>

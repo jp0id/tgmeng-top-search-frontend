@@ -153,7 +153,7 @@
               <div @click="() => { trackUmami('顶部右边订阅');clickSubscriptionSettingButton()}">
                 <div class="setting-btn" aria-label="推送订阅">
                   <div style="width: 1.875rem">
-                    <img src="../../assets/image/subcription.png" alt="糖果梦热榜 - 推送订阅">
+                    <img src="../../assets/image/subcription.png" alt="新闻热榜 - 推送订阅">
                   </div>
                 </div>
               </div>
@@ -165,7 +165,7 @@
               <router-link to="/setting" @click="trackUmami('顶部右边设置')">
                 <div class="setting-btn" aria-label="设置">
                   <div style="width: 1.875rem">
-                    <img src="../../assets/image/setting.png" alt="糖果梦热榜 - 设置中心">
+                    <img src="../../assets/image/setting.png" alt="新闻热榜 - 设置中心">
                   </div>
                 </div>
               </router-link>
@@ -199,7 +199,7 @@
                 @click="() => { trackUmami('移动端菜单-主题切换');toggleTheme(); toggleMobileMenu()}"
                 class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
               <img :src="isDark ? require('@/assets/image/sun.png') : require('@/assets/image/moon.png')"
-                   alt="糖果梦热榜 - 主题切换" class="w-8 h-8">
+                   alt="新闻热榜 - 主题切换" class="w-8 h-8">
               <span class="text-gray-900 dark:text-gray-100 font-medium">主题切换</span>
             </div>
 
@@ -207,7 +207,7 @@
             <div
                 @click="() => { trackUmami('移动端菜单-主题切换');clickSubscriptionSettingButton(); toggleMobileMenu()}"
                 class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-              <img src="../../assets/image/subcription.png" alt="糖果梦热榜 - 订阅设置" class="w-8 h-8">
+              <img src="../../assets/image/subcription.png" alt="新闻热榜 - 订阅设置" class="w-8 h-8">
               <span class="text-gray-900 dark:text-gray-100 font-medium">订阅设置</span>
             </div>
 

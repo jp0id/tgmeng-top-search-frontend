@@ -198,7 +198,7 @@ export default {
     return {
       menus: ['文件', '编辑', '选择', '查看', '转到', '运行', '终端', '帮助'],
       activeMenu: null,
-      projectName: '糖果梦热榜',
+      projectName: '新闻热榜',
       currentFile: 'index.js',
       sidebarVisible: true,
       activeActivityIndex: 0,

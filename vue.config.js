@@ -9,8 +9,8 @@ module.exports = defineConfig({
             .end()
     },
     pwa: {
-        name: '糖果梦热榜',
-        short_name: '糖果梦热榜',
+        name: '新闻热榜',
+        short_name: '新闻热榜',
         themeColor: '#212830',
         msTileColor: '#212830',
         manifestOptions: {
