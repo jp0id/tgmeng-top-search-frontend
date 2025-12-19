@@ -7,11 +7,11 @@
         <!-- 左侧 Logo 和网站名称 - 整体可点击 -->
         <router-link to="/" @click="trackUmami('顶部左边LOGO')"
                      class="flex-shrink-0 flex items-center space-x-2 sm:space-x-3 cursor-pointer">
-          <img src="../../assets/image/logo.png" alt="糖果梦热榜 - 聚合全网热门排行榜"
+          <img src="../../assets/image/logo.png" alt="新闻热榜 - 聚合全网热门排行榜"
                class="logo w-10 h-10 sm:w-12 sm:h-12">
           <span v-if="!isMobile"
                 class="text-xl sm:text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 dark:from-purple-400 dark:via-pink-400 dark:to-blue-400 bg-clip-text text-transparent whitespace-nowrap tracking-wide">
-            糖果梦热榜
+            新闻热榜
           </span>
         </router-link>
 
@@ -149,48 +149,6 @@
         <!-- 右侧设置按钮 - 桌面端显示全部 -->
         <div class="hidden md:flex items-center space-x-6">
           <div>
-            <el-tooltip content="加入微信群" placement="bottom">
-              <a href="https://wechat.tgmeng.com" target="_blank" rel="noopener noreferrer"
-                 @click="() => { trackUmami('顶部右边微信群')}">
-                <div class="setting-btn" aria-label="微信群">
-                  <div style="width: 1.875rem">
-                    <img src="../../assets/image/wechat-logo.png" alt="糖果梦热榜 - 微信群">
-                  </div>
-                </div>
-              </a>
-            </el-tooltip>
-          </div>
-
-          <div>
-            <el-tooltip content="GitHub源码" placement="bottom">
-              <a href="https://github.com/tgmeng-com/tgmeng-top-search-frontend" target="_blank"
-                 rel="noopener noreferrer"
-                 @click="() => { trackUmami('顶部右边github')}">
-                <div class="setting-btn" aria-label="GitHub仓库">
-                  <div style="width: 1.875rem">
-                    <img
-                        :src="isDark ? require('@/assets/image/github-logo-light.png') : require('@/assets/image/github-logo-dark.png')"
-                        alt="糖果梦热榜 - GitHub仓库">
-                  </div>
-                </div>
-              </a>
-            </el-tooltip>
-          </div>
-
-          <div>
-            <el-tooltip content="主题切换" placement="bottom">
-              <div @click="() => { trackUmami('顶部右边主题切换');toggleTheme()}">
-                <div class="setting-btn" aria-label="主题切换">
-                  <div style="width: 1.875rem">
-                    <img :src="isDark ? require('@/assets/image/sun.png') : require('@/assets/image/moon.png')"
-                         alt="糖果梦热榜 - 主题切换">
-                  </div>
-                </div>
-              </div>
-            </el-tooltip>
-          </div>
-
-          <div>
             <el-tooltip content="推送订阅" placement="bottom">
               <div @click="() => { trackUmami('顶部右边订阅');clickSubscriptionSettingButton()}">
                 <div class="setting-btn" aria-label="推送订阅">
@@ -199,18 +157,6 @@
                   </div>
                 </div>
               </div>
-            </el-tooltip>
-          </div>
-
-          <div>
-            <el-tooltip content="摸鱼模式" placement="bottom">
-              <a @click="() => { trackUmami('顶部右边小鱼'); clickWorkMaskExcelButton() }">
-                <div class="setting-btn" aria-label="摸鱼模式">
-                  <div style="width: 1.875rem">
-                    <img src="../../assets/image/fish.png" alt="糖果梦热榜 - 摸鱼模式选择">
-                  </div>
-                </div>
-              </a>
             </el-tooltip>
           </div>
 
@@ -247,23 +193,6 @@
            class="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 shadow-lg">
         <div class="container mx-auto px-8 py-4" :style="widthPaddingStyle">
           <div class="flex flex-col space-y-4">
-            <!-- 微信群 -->
-            <a href="https://wechat.tgmeng.com" target="_blank" rel="noopener noreferrer"
-               @click="() => { trackUmami('移动端菜单-微信群'); toggleMobileMenu() }"
-               class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-              <img src="../../assets/image/wechat-logo.png" alt="微信群" class="w-8 h-8">
-              <span class="text-gray-900 dark:text-gray-100 font-medium">加入微信群</span>
-            </a>
-
-            <!-- GitHub仓库 -->
-            <a href="https://github.com/tgmeng-com/tgmeng-top-search-frontend" target="_blank" rel="noopener noreferrer"
-               @click="() => { trackUmami('移动端菜单-GitHub'); toggleMobileMenu() }"
-               class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-              <img
-                  :src="isDark ? require('@/assets/image/github-logo-light.png') : require('@/assets/image/github-logo-dark.png')"
-                  alt="糖果梦热榜 - GitHub仓库" class="w-8 h-8">
-              <span class="text-gray-900 dark:text-gray-100 font-medium">GitHub仓库</span>
-            </a>
 
             <!-- 主题切换 -->
             <div
@@ -281,13 +210,6 @@
               <img src="../../assets/image/subcription.png" alt="糖果梦热榜 - 订阅设置" class="w-8 h-8">
               <span class="text-gray-900 dark:text-gray-100 font-medium">订阅设置</span>
             </div>
-
-            <!-- 摸鱼模式 -->
-            <a @click="() => { trackUmami('移动端菜单-摸鱼模式'); clickWorkMaskExcelButton(); toggleMobileMenu() }"
-               class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer">
-              <img src="../../assets/image/fish.png" alt="摸鱼模式" class="w-8 h-8">
-              <span class="text-gray-900 dark:text-gray-100 font-medium">摸鱼模式</span>
-            </a>
 
             <!-- 设置 -->
             <router-link to="/setting"

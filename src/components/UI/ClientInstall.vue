@@ -89,7 +89,7 @@ export default {
       this.notification.title = title;
       this.notification.message = message;
       this.notification.buttons = buttons;
-      this.notificationShow = true;
+      this.notificationShow = false;
     },
 
     hideNotification() {
